@@ -80,6 +80,10 @@ void Widget::keyPressEvent(QKeyEvent *e)//键盘事件
     }
 }
 
+/**
+ * @brief Widget::detect 修改器开启时做的检测
+ * @return 无意义
+ */
 bool Widget::detect()
 {
     lockFileDir.setPath(lockFileDirPathName);
@@ -128,6 +132,9 @@ bool Widget::detect()
     return true;
 }
 
+/**
+ * @brief Widget::dialog 显示开启对话框
+ */
 void Widget::dialog()
 {
     QDialog dlg(this);
@@ -155,6 +162,9 @@ void Widget::dialog()
     dlg.exec();
 }
 
+/**
+ * @brief Widget::CalPokemonOffset 计算6只pm的各个属性偏移量
+ */
 void Widget::CalPokemonOffset()
 {
     Personality << tr("努力 无变化") << tr("孤僻 物攻+ 物防-") << tr("勇敢 物攻+ 速度-") << tr("固执 物攻+ 特攻-") <<
@@ -209,6 +219,10 @@ void Widget::CalPokemonOffset()
         poke[i].begin = poke[i - 1].begin + 100;
     }
 }
+
+/**
+ * @brief Widget::CalExpList 计算pm的升级经验值表
+ */
 void Widget::CalExpList()
 {
     type[0].expList[0] = 0 ;type[1].expList[0] = 0 ;type[2].expList[0] = 0 ;type[3].expList[0] = 0 ;type[4].expList[0] = 0 ;type[5].expList[0] = 0;
@@ -313,6 +327,10 @@ void Widget::CalExpList()
     type[0].expList[99] = 970299 ;type[1].expList[99] = 591882 ;type[2].expList[99] = 1571884 ;type[3].expList[99] = 1027103 ;type[4].expList[99] = 776239 ;type[5].expList[99] = 1212873;
     type[0].expList[100] = 1000000 ;type[1].expList[100] = 600000 ;type[2].expList[100] = 1640000 ;type[3].expList[100] = 1059860 ;type[4].expList[100] = 800000 ;type[5].expList[100] = 1250000;
 }
+
+/**
+ * @brief Widget::loadType 加载属性对应的图片
+ */
 void Widget::loadType()
 {
     pokeType[0].pix.load("://images/普.png");
@@ -335,6 +353,9 @@ void Widget::loadType()
     pokeType[23].pix.load("://images/仙.png");
 }
 
+/**
+ * @brief Widget::loadAbility 加载pm的特性
+ */
 void Widget::loadAbility()
 {
     ability[1] = tr("恶臭");
@@ -572,6 +593,9 @@ void Widget::loadAbility()
     ability[233] = tr("脑核之力");
 }
 
+/**
+ * @brief Widget::readFile 读取配置文件
+ */
 void Widget::readFile()
 {
 //    QFile file1(QString("BreedNameList_4.txt"));
@@ -606,6 +630,9 @@ void Widget::readFile()
     file3.close();
 }
 
+/**
+ * @brief Widget::addItem 添加combobox中的item项
+ */
 void Widget::addItem()
 {
     VBA.Attach();
@@ -659,6 +686,10 @@ void Widget::addItem()
         ui->comboInitialLevel->addItem(tr("Lv.%1").arg(i));
 }
 
+/**
+ * @brief Widget::readPoke 读取pm属性
+ * @param index 第几只pm
+ */
 void Widget::readPoke(int index)
 {
     currentPoke.breed = VBA.ReadValue_2(poke[index].breedOffset);
@@ -698,6 +729,10 @@ void Widget::readPoke(int index)
     showBreedValue();                                                               //种族值
     refreshSkill();
 }
+
+/**
+ * @brief Widget::showExpLevel 显示升级经验值
+ */
 void Widget::showExpLevel()
 {
     ui->comboLevel->clear();
@@ -875,39 +910,43 @@ void Widget::showSkill_1()
     u32 offset = base + 0x1d1d84d - 13;
     if(!readedSkill)//没有读取过技能文件 就读取 //借用这和flag，但是不读取文件了
     {
-//        QFile file3(QString("SkillNameList_4.txt"));
-//        if(false == file3.open(QIODevice::ReadOnly))
-//        {
-//            QMessageBox::critical(this,"文件读取失败",tr("无法正确读取文件，\n"
-//                                                   "请确保文件没有被删除！"),QMessageBox::Ok);
-//            exit(1);
-//        }
+        QFile file3(QString("SkillNameList_4.txt"));
+        if(false == file3.open(QIODevice::ReadOnly))
+        {
+            QMessageBox::critical(this,"文件读取失败",tr("无法正确读取文件，\n"
+                                                   "请确保文件没有被删除！"),QMessageBox::Ok);
+            exit(1);
+        }
         //添加技能名字
 
-//        for(int i=0;!file3.atEnd();i++)
-//        {
-//            QString str = QString(file3.readLine());
-//            skill[i].name = str.mid(6);
-//            skill[i].name.chop(2);
-//        }
+        for(int i=0;!file3.atEnd();i++)
+        {
+            QString str = QString(file3.readLine());
+            skill[i].name = str.mid(6);
+            skill[i].name.chop(2);
+        }
 
         for(int i=0;i<SKILLNUM;i++)
         {
-//            QString str = QString::number(i,16);while(str.length()<3)str.insert(0,"0");str = str.toUpper();
-//            ui->skill1->addItem(str + ": " + skill[i].name);
-//            ui->skill2->addItem(str + ": " + skill[i].name);
-            ReadProcessMemory(VBA.m_hProcess,(void*)offset,data,13,NULL);
-            offset += 13;
-            char num[10];
-            sprintf(num,"%03X:",i);
-            QString name = decode(data,13);
-            if(name == "")name = "-";
-            skill[i].name = name;
-            ui->skill1->addItem(num + skill[i].name);
-            ui->skill2->addItem(num + skill[i].name);
+            QString str = QString::number(i,16);while(str.length()<3)str.insert(0,"0");str = str.toUpper();
+            ui->skill1->addItem(str + ": " + skill[i].name);
+            ui->skill2->addItem(str + ": " + skill[i].name);
+
+
+            //***************************************************************
+//            ReadProcessMemory(VBA.m_hProcess,(void*)offset,data,13,NULL);
+//            offset += 13;
+//            char num[10];
+//            sprintf(num,"%03X:",i);
+//            QString name = decode(data,13);
+//            if(name == "")name = "-";
+//            skill[i].name = name;
+//            ui->skill1->addItem(num + skill[i].name);
+//            ui->skill2->addItem(num + skill[i].name);
+            //***************************************************************
 
         }
-//        file3.close();
+        file3.close();
         readedSkill = true;
     }
 }
