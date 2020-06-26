@@ -131,7 +131,7 @@ bool Widget::detect()
 void Widget::dialog()
 {
     QDialog dlg(this);
-    dlg.setFixedSize(220,102);
+    dlg.setFixedSize(252,102);
     dlg.setWindowTitle(tr("公告"));
     dlg.setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
     QLabel text;
@@ -141,15 +141,15 @@ void Widget::dialog()
                     "");
 //    text.setGeometry(58,17,150,34);
 //    text.setText(tr("本软件完全免费,禁止倒卖!"));
-    text.setGeometry(58,7,150,50);
-    text.setText(tr("本软件禁止倒卖!\n可以的话，\n还是请多少赞助点！嘿嘿！"));
+    text.setGeometry(58,7,180,50);
+    text.setText(tr("本软件现在完全免费！禁止倒卖！\n可以的话，\n还是请多少赞助点！嘿嘿！"));
     text.setParent(&dlg);
     QLabel icon;
     icon.setGeometry(10,14,40,40);
     icon.setPixmap(QPixmap("://images/icon.png"));
     icon.setParent(&dlg);
     QPushButton b(tr("确认"));
-    b.setGeometry(130,60,75,25);
+    b.setGeometry(160,65,75,25);
     b.setParent(&dlg);
     connect(&b,&QPushButton::clicked,&dlg,&QDialog::close);
     dlg.exec();
