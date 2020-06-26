@@ -196,7 +196,7 @@ private slots:
 
     void on_howToUse_clicked();
 
-    void on_howToActive_clicked();
+    void on_repository_clicked();
 
 protected:
     void keyPressEvent(QKeyEvent *);

@@ -3433,7 +3433,9 @@ void Widget::on_howToUse_clicked()
     QDesktopServices::openUrl(regUrl);
 }
 
-void Widget::on_howToActive_clicked()
+
+void Widget::on_repository_clicked()
 {
-    QMessageBox::about(this,tr("激活"),tr("请联系作者\nQQ 1953649096\n获取激活码，价格15.8元\n加好友请说明“究极绿宝石电脑版修改器激活”"));
+    const QUrl regUrl(QLatin1String("https://github.com/Tanyiqu/UltimateEmeraldHack"));
+    QDesktopServices::openUrl(regUrl);
 }

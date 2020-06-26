@@ -4341,7 +4341,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <item>
         <property name="text">
-         <string>究极绿宝石IV</string>
+         <string>究极绿宝石IV及之后</string>
         </property>
        </item>
        <item>
@@ -4524,7 +4524,7 @@ border-image:url(:/images/search_pressed.png)
         </rect>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab_single">
         <attribute name="title">
@@ -5563,7 +5563,7 @@ p, li { white-space: pre-wrap; }
         <string>使用教程</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="howToActive">
+      <widget class="QPushButton" name="repository">
        <property name="geometry">
         <rect>
          <x>440</x>
@@ -5573,7 +5573,7 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="text">
-        <string>激活方式</string>
+        <string>项目地址</string>
        </property>
       </widget>
      </widget>
