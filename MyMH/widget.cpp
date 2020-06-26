@@ -2879,7 +2879,7 @@ void Widget::on_onekeyCloseLocking_s_clicked()
 
 void Widget::on_getVBA_clicked()
 {
-    const QUrl regUrl(QLatin1String("https://pan.baidu.com/s/15tjglfC-pZXPBtqIIU46Ug"));
+    const QUrl regUrl(QLatin1String("https://tanyiqu.lanzous.com/b0cqbjkmb"));
     QDesktopServices::openUrl(regUrl);
 }
 
@@ -3333,8 +3333,8 @@ void Widget::on_normalItemTo99_clicked()
 
 void Widget::on_getMegaVersion_clicked()
 {
-    QMessageBox::about(this, tr("永久Mega"), tr("请在弹出的链接中下载永久mega版本\n点击OK后弹出"));
-    const QUrl regUrl(QLatin1String("https://www.lanzous.com/b653829"));
+    QMessageBox::about(this, tr("永久Mega"), tr("请在弹出的链接中下载永久mega版本，目前永久mega的版本比较少\n点击OK后弹出"));
+    const QUrl regUrl(QLatin1String("https://tanyiqu.lanzous.com/b0cq6u7gd"));
     QDesktopServices::openUrl(regUrl);
 }
 

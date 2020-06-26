@@ -5534,7 +5534,7 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="text">
-        <string>获取VBA(1.9MB)</string>
+        <string>获取VBA 1.8.0</string>
        </property>
       </widget>
       <widget class="QPushButton" name="getMCode">
