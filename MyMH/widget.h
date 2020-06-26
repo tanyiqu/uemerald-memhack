@@ -198,6 +198,8 @@ private slots:
 
     void on_repository_clicked();
 
+    void on_homePage_clicked();
+
 protected:
     void keyPressEvent(QKeyEvent *);
 

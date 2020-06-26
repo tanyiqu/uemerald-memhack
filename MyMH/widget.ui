@@ -5537,7 +5537,7 @@ p, li { white-space: pre-wrap; }
         <string>获取VBA 1.8.0</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="getMCode">
+      <widget class="QPushButton" name="homePage">
        <property name="geometry">
         <rect>
          <x>440</x>
@@ -5547,7 +5547,7 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="text">
-        <string>查看机器码</string>
+        <string>修改器主页</string>
        </property>
       </widget>
       <widget class="QPushButton" name="howToUse">
