@@ -101,9 +101,6 @@ bool Widget::detect()
         qDebug() << "文件不存在";
         lockFile.open(QIODevice::ReadWrite | QIODevice::Text);
         lockFile.write("0\n");//是否显示开始对话框
-        lockFile.write("3\n");//试用次数
-        lockFile.write(QString(get_cpuId() + "\n").toUtf8().data());//本机机器码
-        lockFile.write(get_cpuId().toUtf8().data());//激活码
         lockFile.close();
         qDebug() << "文件创建成功";
     }
@@ -117,112 +114,7 @@ bool Widget::detect()
     //读取文件
     lockFile.open(QIODevice::ReadOnly);
     QString startDialog(lockFile.readLine());startDialog.chop(2);   //开始对话框
-    int tryNum = QString(lockFile.readLine()).toInt();              //试用次数
-    QString cpuid(lockFile.readLine());cpuid.chop(2);               //机器码
-    this->key = QString(lockFile.readLine());                     //激活码
     lockFile.close();
-//    qDebug() << startDialog << cpuid << this->key;
-
-    //--------------------------------------------
-    cpuid = get_cpuId();
-    QString cpuid1 = cpuid.mid(0,8);
-    QString cpuid2 = cpuid.mid(8,8);
-    u32 c1 = cpuid1.toUInt(nullptr,16);
-    u32 c2 = cpuid2.toUInt(nullptr,16);
-
-    QString key1 = this->key.mid(0,8);
-    QString key2 = this->key.mid(8,8);
-    u32 k1 = key1.toUInt(nullptr,16);
-    u32 k2 = key2.toUInt(nullptr,16);
-    if((c1^k1)==0xABCD9876 && (c2^k2)==0x9876ABCD)
-        isActivate = true;
-    else
-        isActivate = false;
-    //是否激活
-    if(!isActivate)
-    {
-        QDialog dlg(this);
-        dlg.setFixedSize(260,102);
-        dlg.setWindowTitle(tr("试用%1次").arg(tryNum));
-        dlg.setWindowFlags(Qt::Dialog | Qt::WindowMinimizeButtonHint);
-        QLabel text;
-        text.setStyleSheet(""
-                        "font: 10pt \"微软雅黑\";"
-                        "font-size:12px;"
-                        "");
-        text.setGeometry(58,14,170,50);
-        text.setText(tr("本机机器码：\n激活后此对话框自动消失\n激活码："));
-        text.setParent(&dlg);
-        QLineEdit *edit1 = new QLineEdit(&dlg);
-        edit1->setGeometry(130,14,120,18);
-        edit1->setReadOnly(true);
-        edit1->setText(get_cpuId());
-        QLineEdit *edit2 = new QLineEdit(&dlg);
-        edit2->setGeometry(130,48,120,18);
-        QLabel icon;
-        icon.setGeometry(10,14,40,40);
-        icon.setPixmap(QPixmap("://images/icon.png"));
-        icon.setParent(&dlg);
-        QPushButton b(tr("试用"));
-        QPushButton z(tr("激活"));
-        QPushButton a(tr("获取激活码"));
-        b.setGeometry(15,70,75,25);
-        z.setGeometry(95,70,75,25);
-        a.setGeometry(175,70,75,25);
-        b.setParent(&dlg);
-        z.setParent(&dlg);
-        a.setParent(&dlg);
-        connect(&b,&QPushButton::clicked,&dlg,&QDialog::close);
-        connect(&z,&QPushButton::clicked,[=](){
-            QString c1 = edit1->text().mid(0,8);
-            QString c2 = edit1->text().mid(8,8);
-            QString k1 = edit2->text().mid(0,8);
-            QString k2 = edit2->text().mid(8,8);
-            u32 uc1 = c1.toUInt(nullptr,16);
-            u32 uc2 = c2.toUInt(nullptr,16);
-            u32 uk1 = k1.toUInt(nullptr,16);
-            u32 uk2 = k2.toUInt(nullptr,16);
-            if((uc1^uk1)==0xABCD9876 && (uc2^uk2)==0x9876ABCD)
-            {
-                this->key = edit2->text();
-                QMessageBox::warning(this,tr("激活成功"),tr("激活成功\n重启后生效"));
-                lockFile.open(QIODevice::WriteOnly);
-                lockFile.write(QString(startDialog + "\r\n").toUtf8().data());
-                lockFile.write(QString("%1\r\n").arg(tryNum).toUtf8().data());
-                lockFile.write(QString(cpuid + "\r\n").toUtf8().data());
-                lockFile.write(this->key.toUtf8().data());
-                lockFile.close();
-                exit(0);
-            }
-            else
-                QMessageBox::warning(this,tr("激活失败"),tr("激活失败\n请联系淘宝卖家获取激活码！"));
-        });
-        connect(&a,&QPushButton::clicked,[=](){
-            const QUrl regUrl(QLatin1String("https://shop392021599.taobao.com"));
-            QDesktopServices::openUrl(regUrl);
-        });
-        dlg.exec();
-//        lockFile.open(QIODevice::WriteOnly);
-//        lockFile.write(QString(startDialog + "\n").toUtf8().data());
-//        lockFile.write(QString("%1\n").arg(tryNum).toUtf8().data());
-//        lockFile.write(QString(cpuid + "\n").toUtf8().data());
-//        lockFile.write(this->key.toUtf8().data());
-//        lockFile.close();
-        if(tryNum <= 0)
-            exit(0);
-        //------------------修改了使用次数
-//        if(tryNum >3){QMessageBox::critical(this,"MyPokeHack",tr("修改了使用次数？？\n好像没有用呢！"),QMessageBox::Ok);exit(0); }
-        //------------------
-        if(tryNum > 0)
-            tryNum --;
-        lockFile.open(QIODevice::WriteOnly);
-        lockFile.write(QString(startDialog + "\r\n").toUtf8().data());
-        lockFile.write(QString("%1\r\n").arg(tryNum).toUtf8().data());
-        lockFile.write(QString(cpuid + "\r\n").toUtf8().data());
-        lockFile.write(this->key.toUtf8().data());
-        lockFile.close();
-    }
-    //----------------------------------------------------
 
     //是否显示开始对话框
     if(startDialog == "0")//显示对话框
