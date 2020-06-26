@@ -50,3 +50,6 @@ compile_commands.json
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
+
+
+/build-MyMH-Desktop_Qt_5_8_0_MinGW_32bit-Debug

@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/icon.png</file>
+        <file>images/Qt.jpg</file>
+        <file>images/tip.png</file>
+        <file>images/vba.png</file>
+        <file>images/app.ico</file>
+        <file>images/search_default.png</file>
+        <file>images/search_pressed.png</file>
+        <file>images/ribbon_unk_1.png</file>
+        <file>images/ribbon_unk_2.png</file>
+        <file>images/ribbon_unk_3.png</file>
+        <file>images/ribbon_unk_4.png</file>
+        <file>images/ribbon_unk_5.png</file>
+        <file>images/ribbon_unk_6.png</file>
+        <file>images/ribbon_unk_7.png</file>
+        <file>images/ribbon_other_1.png</file>
+        <file>images/ribbon_other_2.png</file>
+        <file>images/ribbon_other_3.png</file>
+        <file>images/ribbon_other_4.png</file>
+        <file>images/ribbon_other_5.png</file>
+        <file>images/search_hover.png</file>
+        <file>images/冰.png</file>
+        <file>images/草.png</file>
+        <file>images/超.png</file>
+        <file>images/虫.png</file>
+        <file>images/地.png</file>
+        <file>images/电.png</file>
+        <file>images/毒.png</file>
+        <file>images/恶.png</file>
+        <file>images/飞.png</file>
+        <file>images/钢.png</file>
+        <file>images/格.png</file>
+        <file>images/鬼.png</file>
+        <file>images/龙.png</file>
+        <file>images/普.png</file>
+        <file>images/水.png</file>
+        <file>images/仙.png</file>
+        <file>images/岩.png</file>
+        <file>images/炎.png</file>
+        <file>images/大师球.png</file>
+        <file>images/transparency.png</file>
+        <file>images/shop.png</file>
+    </qresource>
+</RCC>

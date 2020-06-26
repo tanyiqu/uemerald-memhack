@@ -1,0 +1,5739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>612</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>467</width>
+    <height>384</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>6666</width>
+    <height>6666</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MyPokeHack</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>6666</width>
+       <height>6666</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_queue">
+      <attribute name="title">
+       <string>宠物</string>
+      </attribute>
+      <widget class="QFrame" name="frame_poke">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>50</y>
+         <width>141</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>666</width>
+         <height>666</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="poke1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="poke2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="poke4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="poke3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="poke5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>170</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="poke6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>210</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QTabWidget" name="tab_pokeinfo">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>9</y>
+         <width>426</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>198</width>
+         <height>212</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="info_base">
+        <attribute name="title">
+         <string>基本</string>
+        </attribute>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>28</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>种族</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>性格</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>28</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>亲密度(0-255)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>100</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>经验值</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>180</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>等级 : 经验值</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBreed">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>58</y>
+           <width>164</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>20</number>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboPers">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>100</y>
+           <width>141</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="maxVisibleItems">
+          <number>13</number>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineExp">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>100</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineInti">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>52</y>
+           <width>101</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboLevel">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>210</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="maxVisibleItems">
+          <number>12</number>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboItem">
+         <property name="geometry">
+          <rect>
+           <x>43</x>
+           <y>280</y>
+           <width>131</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>18</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>25</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>道具</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="changeColor">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>320</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>闪</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="linePersValue">
+         <property name="geometry">
+          <rect>
+           <x>55</x>
+           <y>140</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>性格值</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="changeId">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>400</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>更改特性</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_43">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>400</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>(取消隐藏特性才可修改普通特性)</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="toEgg">
+         <property name="geometry">
+          <rect>
+           <x>239</x>
+           <y>252</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>蛋</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_46">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>277</y>
+           <width>101</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>再次点击可以让蛋瞬间孵化，但不可更改名字</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="changeHideId">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>400</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;立即生效&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>隐藏特性</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>性别</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboSex">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>180</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchItem">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>282</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchBreed">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_65">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>140</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineHideID">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>140</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_57">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>350</y>
+           <width>211</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>改好性格性别后再渡闪</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_68">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>256</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>剩余圈数</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineRestEggSteps">
+         <property name="geometry">
+          <rect>
+           <x>353</x>
+           <y>254</y>
+           <width>36</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="stepsTo0">
+         <property name="geometry">
+          <rect>
+           <x>345</x>
+           <y>280</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;不是蛋不要瞎改&lt;/p&gt;&lt;p&gt;蛋圈数就是亲密度数&lt;/p&gt;&lt;p&gt;想自定义圈数就改亲密度&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>快速孵化</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboAbility">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>230</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_83">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>特性</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="info_ability">
+        <attribute name="title">
+         <string>能力值</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupEnd">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>努力值(0-255)</string>
+         </property>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>HP</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_hp">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_atk">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_def">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>速度</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_sp">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_spdef">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="end_spatk">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupProperty">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>19</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>能力值(0-999)</string>
+         </property>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>HP</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="hp">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="atk">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="def">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>速度</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="sp">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="spdef">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="spatk">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupID">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>个体值(0-31)</string>
+         </property>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>HP</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_hp">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_atk">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_def">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>物攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>速度</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特攻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>特防</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_sp">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_spdef">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ab_spatk">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBeauty">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>魅力值(0-255)</string>
+         </property>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>帅气</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>可爱</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b2">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b3">
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>74</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>美丽</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>聪明</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>强壮</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>22</y>
+            <width>24</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>饱腹</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b4">
+          <property name="geometry">
+           <rect>
+            <x>203</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b6">
+          <property name="geometry">
+           <rect>
+            <x>332</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="b5">
+          <property name="geometry">
+           <rect>
+            <x>268</x>
+            <y>40</y>
+            <width>58</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="MaxID">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>340</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>6V</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="MaxBeauty">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>340</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>魅力爆表</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="correction">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>340</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>能力修正</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="info_skill">
+        <attribute name="title">
+         <string>技能</string>
+        </attribute>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>30</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能1 PP(0-255)</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="PP1">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>30</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PP增幅(0%-60%)</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboPP1">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>60</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboPP2">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>120</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="PP2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>90</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PP增幅(0%-60%)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>90</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能2 PP(0-255)</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboPP3">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>180</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>150</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能3 PP(0-255)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>150</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PP增幅(0%-60%)</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="PP3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>180</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboPP4">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>240</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="PP4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>91</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>210</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能4 PP(0-255)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>210</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PP增幅(0%-60%)</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="MaxPointUp">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>280</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>增幅最大</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="skill4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>240</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>18</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_50">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>150</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能3</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="skill1">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>18</number>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="skill3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>180</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>18</number>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="skill2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>120</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="maxVisibleItems">
+          <number>18</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_51">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>210</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能4</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_53">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>技能1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="LeagueMode">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>280</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;6只精灵PP全为99&lt;/p&gt;&lt;p&gt;放肆浪联盟&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>联盟模式</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="changeSkill">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>280</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改技能</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchSkill1">
+         <property name="geometry">
+          <rect>
+           <x>147</x>
+           <y>62</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchSkill2">
+         <property name="geometry">
+          <rect>
+           <x>147</x>
+           <y>122</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchSkill3">
+         <property name="geometry">
+          <rect>
+           <x>147</x>
+           <y>182</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="searchSkill4">
+         <property name="geometry">
+          <rect>
+           <x>147</x>
+           <y>242</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="info_ribbon">
+        <attribute name="title">
+         <string>缎带</string>
+        </attribute>
+        <widget class="QGroupBox" name="ribbon_contest">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>19</y>
+           <width>361</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt ;</string>
+         </property>
+         <property name="title">
+          <string>华丽大赛</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <widget class="QGroupBox" name="group_b1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>63</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>帅气</string>
+          </property>
+          <widget class="QRadioButton" name="ribbon_b1_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>78</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>专家</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b1_0">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>无</string>
+           </property>
+           <property name="shortcut">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b1_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>超级</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b1_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>97</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大师</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b1_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="group_b2">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>22</y>
+            <width>64</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>美丽</string>
+          </property>
+          <widget class="QRadioButton" name="ribbon_b2_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>78</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>专家</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b2_0">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>无</string>
+           </property>
+           <property name="shortcut">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b2_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>超级</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b2_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>97</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大师</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b2_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="group_b3">
+          <property name="geometry">
+           <rect>
+            <x>149</x>
+            <y>22</y>
+            <width>63</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>可爱</string>
+          </property>
+          <widget class="QRadioButton" name="ribbon_b3_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>78</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>专家</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b3_0">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>无</string>
+           </property>
+           <property name="shortcut">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b3_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>超级</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b3_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>97</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大师</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b3_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="group_b4">
+          <property name="geometry">
+           <rect>
+            <x>218</x>
+            <y>22</y>
+            <width>64</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>聪明</string>
+          </property>
+          <widget class="QRadioButton" name="ribbon_b4_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>78</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>专家</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b4_0">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>无</string>
+           </property>
+           <property name="shortcut">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b4_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>超级</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b4_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>97</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大师</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b4_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="group_b5">
+          <property name="geometry">
+           <rect>
+            <x>288</x>
+            <y>22</y>
+            <width>63</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>强壮</string>
+          </property>
+          <widget class="QRadioButton" name="ribbon_b5_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>78</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>专家</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b5_0">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>无</string>
+           </property>
+           <property name="shortcut">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b5_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>超级</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b5_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>97</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大师</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ribbon_b5_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ribbon_other">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>170</y>
+           <width>171</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt ;</string>
+         </property>
+         <property name="title">
+          <string>其他</string>
+         </property>
+         <widget class="QCheckBox" name="ribbon_other_1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>161</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>打败联盟冠军</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_other_1.png</normaloff>:/images/ribbon_other_1.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_other_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>161</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>战斗塔50级模式连胜</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_other_2.png</normaloff>:/images/ribbon_other_2.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_other_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>151</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>战斗塔自由级模式连胜</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_other_3.png</normaloff>:/images/ribbon_other_3.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_other_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>171</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>为画馆做模特</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_other_4.png</normaloff>:/images/ribbon_other_4.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_other_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>100</y>
+            <width>171</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>挣满510点努力值</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_other_5.png</normaloff>:/images/ribbon_other_5.png</iconset>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ribbon_unk">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>170</y>
+           <width>121</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt ;</string>
+         </property>
+         <property name="title">
+          <string>联动</string>
+         </property>
+         <widget class="QCheckBox" name="ribbon_unk_1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk1</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_1.png</normaloff>:/images/ribbon_unk_1.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk2</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_2.png</normaloff>:/images/ribbon_unk_2.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk3</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_3.png</normaloff>:/images/ribbon_unk_3.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk4</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_4.png</normaloff>:/images/ribbon_unk_4.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk5</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_5.png</normaloff>:/images/ribbon_unk_5.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk6</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_6.png</normaloff>:/images/ribbon_unk_6.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ribbon_unk_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>140</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>unk7</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/images/ribbon_unk_7.png</normaloff>:/images/ribbon_unk_7.png</iconset>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="ribbon20">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>310</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>20个缎带</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ribbon25">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>310</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>25个缎带</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ribbon32">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>310</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>32个缎带</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ribbon0">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>310</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>清空</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>220</y>
+           <width>54</width>
+           <height>12</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>缎带数：</string>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="ribbonNum">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>210</y>
+           <width>31</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="digitCount">
+          <number>2</number>
+         </property>
+         <property name="mode">
+          <enum>QLCDNumber::Dec</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="info_fixed">
+        <attribute name="title">
+         <string>固定</string>
+        </attribute>
+        <widget class="QLabel" name="fix_name">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>无</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_59">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>35</y>
+           <width>41</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>属性：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_60">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>81</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>性别比例：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_61">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>85</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>满级经验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_62">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>71</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>孵化周期：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="type1">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>35</y>
+           <width>48</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="type2">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>35</y>
+           <width>48</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_sexratio">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>60</y>
+           <width>191</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_MaxExp">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>85</y>
+           <width>191</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_EggSteps">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>110</y>
+           <width>191</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_73">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>135</y>
+           <width>71</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>种族值</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="breedValuePanel">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>161</y>
+           <width>364</width>
+           <height>197</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:1px solid rgb(204, 204, 204)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="statsCalculator">
+         <property name="geometry">
+          <rect>
+           <x>117</x>
+           <y>333</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image:url(:/images/transparency.png);
+color:rgb(51, 102, 187);
+}
+QPushButton:hover{
+color:rgb(0, 0, 255);
+}
+QPushButton:pressed{
+color:rgb(187, 102, 51);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="info_other">
+        <attribute name="title">
+         <string>其他</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupMark">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>315</y>
+           <width>178</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>标记</string>
+         </property>
+         <widget class="QCheckBox" name="mark1">
+          <property name="geometry">
+           <rect>
+            <x>133</x>
+            <y>23</y>
+            <width>35</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>❤</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="mark2">
+          <property name="geometry">
+           <rect>
+            <x>92</x>
+            <y>23</y>
+            <width>35</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>▲</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="mark3">
+          <property name="geometry">
+           <rect>
+            <x>51</x>
+            <y>23</y>
+            <width>35</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>■</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="mark4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>23</y>
+            <width>35</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>●</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupCopy">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>10</y>
+           <width>181</width>
+           <height>201</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>复制宝可梦</string>
+         </property>
+         <widget class="QPushButton" name="copy">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>复制</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="paste">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;慎!!&lt;/p&gt;&lt;p&gt;不可逆!!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>粘贴</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelSnipaste">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>120</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid rgb(0, 0, 0)</string>
+          </property>
+          <property name="text">
+           <string>默认1:闪光梦幻</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_58">
+          <property name="geometry">
+           <rect>
+            <x>13</x>
+            <y>100</y>
+            <width>41</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>剪贴板</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_66">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>默认1:飞翔/攀瀑/冲浪/居合斩</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_67">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>170</y>
+            <width>151</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>默认2:怪力/闪光/碎岩/潜水</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="switch_snipaste">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>119</y>
+            <width>41</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>切换</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="deletePokemon">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>删除精灵</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>60</y>
+            <width>54</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>慎点！</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_71">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>77</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>操作全部不可逆！</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_72">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>94</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>建议留个存档！</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupTrim">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>211</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>强迫症</string>
+         </property>
+         <widget class="QLabel" name="label_63">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>22</y>
+            <width>36</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>宠物球</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_69">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>22</y>
+            <width>48</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>初始等级</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBall">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>48</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maxVisibleItems">
+           <number>13</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>00 精灵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>01 超级球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>02 原野球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>03 高级球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>02 大师球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>05 网纹球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>06 潜水球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>07 巢穴球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>08 重复球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>09 时间球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10 华丽球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11 首席球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12 等级球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>13 诱饵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>14 月亮球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>15 友友球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16 甜蜜球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>17 沉重球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>18 速度球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>19 竞赛球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20 黑暗球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>21 先机球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>22 治愈球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>23 贵重球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>24 公园球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>25 梦境球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>26 究极球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>27 精灵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>28 精灵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>29 精灵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>30 精灵球</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>31 精灵球</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="comboInitialLevel">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>48</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_64">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>75</y>
+            <width>36</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>捕获地</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_70">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>75</y>
+            <width>48</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>宝可病毒</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboPlace">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>101</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maxVisibleItems">
+           <number>18</number>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboVirus">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>101</y>
+            <width>50</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>无</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>病毒</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>黑点</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QCheckBox" name="placeProbably">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>75</y>
+            <width>81</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>大概(女主)</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupStatus">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>220</y>
+           <width>181</width>
+           <height>88</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>状态</string>
+         </property>
+         <widget class="QCheckBox" name="status_toxic">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>剧毒</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="status_poison">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>40</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>中毒</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="status_frost">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>40</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>冰冻</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="status_sleep">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>睡眠</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="status_burn">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>烧伤</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="status_palsy">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>60</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>麻痹</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineSleepBout">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>20</y>
+            <width>31</width>
+            <height>16</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_82">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>20</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>回合(0-7)</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupName">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>211</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>昵称</string>
+         </property>
+         <widget class="QPushButton" name="searchPokeName">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>48</y>
+            <width>35</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>检索</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nameInput">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>49</y>
+            <width>101</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="name">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="writePokeName">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>48</y>
+            <width>41</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>修改</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupOTName">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>95</y>
+           <width>211</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>训练家名字</string>
+         </property>
+         <widget class="QPushButton" name="searchOTName">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>48</y>
+            <width>35</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>检索</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineOTNameInput">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>49</y>
+            <width>101</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineOTName">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="writeOTName">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>48</y>
+            <width>41</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>修改</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="getMegaVersion">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>320</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>永久Mega</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_56">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>340</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;调整PM位置/放回箱子前&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;关闭锁定功能&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="lockMega">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>340</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>mega锁定</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="write">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>310</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>写入</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="refresh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>310</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="screen">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Welcome !!!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>360</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>写入属性前一定刷新检查一下，有些修改后不可逆</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_player">
+      <attribute name="title">
+       <string>角色</string>
+      </attribute>
+      <widget class="QLineEdit" name="linePlayerName">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_74">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>训练家名称</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_75">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>零花钱</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineMoney">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>130</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="linePlayerID">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_76">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>训练家编号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCoin">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>130</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_77">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>游戏币</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineRestSteps">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>210</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineDust">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_78">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>180</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>狩猎区步数</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_79">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>火山灰</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineBattlePoint">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>290</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_80">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>260</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>实际战斗点数</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineBattlePointOnCard">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>290</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_81">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>260</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>卡片上战斗点数</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="refreshPlayer">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>350</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="writePlayer">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>350</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>写入</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="searchName">
+       <property name="geometry">
+        <rect>
+         <x>281</x>
+         <y>49</y>
+         <width>35</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>检索</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineNameInput">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>50</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lineNameInputWarning">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 0, 0)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>160</y>
+         <width>181</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>其他功能</string>
+       </property>
+       <widget class="QPushButton" name="EnableMirageIsland">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>出现幻岛</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_item">
+      <attribute name="title">
+       <string>背包</string>
+      </attribute>
+      <widget class="QLineEdit" name="linePlayereItemQuantity">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_85">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>数量</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboPlayerItem">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxVisibleItems">
+        <number>18</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_84">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>25</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>道具</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="writeItem">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>写入背包</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="searchPlayerItem">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>42</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border-image:url(:/images/search_default.png)
+}
+QPushButton:hover{
+border-image:url(:/images/search_hover.png)
+}
+QPushButton:pressed{
+border-image:url(:/images/search_pressed.png)
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="itemTable">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>551</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerItem</enum>
+       </property>
+       <property name="horizontalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="rowCount">
+        <number>130</number>
+       </property>
+       <row>
+        <property name="text">
+         <string>01</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>02</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>03</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>04</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>05</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>06</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>07</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>08</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>09</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>11</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>12</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>13</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>14</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>15</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>16</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>17</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>18</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>20</string>
+        </property>
+       </row>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>普通道具</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>精灵球</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>技能机器</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>树果</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>重要道具</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="refreshItem">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboVersion">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>40</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>究极绿宝石IV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>究极绿宝石III及之前</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_86">
+       <property name="geometry">
+        <rect>
+         <x>314</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>选择版本</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_55">
+       <property name="geometry">
+        <rect>
+         <x>314</x>
+         <y>70</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>注意选择游戏版本</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="deleteItem">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>120</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_87">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>123</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>当前选择:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelcurrSelectItem">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>123</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="normalItemTo99">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>现有普通道具变为99个</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ballTo99">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>160</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>宠物球各99个</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="allSkillItem">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>160</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>全技能机器</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="fruitTo99">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>160</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>树果各99个</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_battle">
+      <attribute name="title">
+       <string>对战</string>
+      </attribute>
+      <widget class="QTabWidget" name="tab_battleFlag">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>573</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_single">
+        <attribute name="title">
+         <string>单打</string>
+        </attribute>
+        <widget class="QPushButton" name="oneHitKill_s">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>命中对方就必死(对方不是结实特性，没有披带)</string>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>一击必杀(己方)</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="lockHP_s">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>锁定自己血量</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="battleRefresh_s">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>刷新</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="battleWrite_s">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupOwn">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>己方</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_165">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="ownCurrHP"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_168">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="ownAtk"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_169">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="ownDef"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_172">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="ownSpAtk"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_173">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="ownSpDef"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_174">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="ownSpeed"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupEnemy">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>敌方</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_175">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="enemyCurrHP"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_176">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="enemyAtk"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_177">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="enemyDef"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_178">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="enemySpAtk"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_179">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="enemySpDef"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_180">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="enemySpeed"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="battleDetect_s">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>战斗监测</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_42">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>335</y>
+           <width>181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>战斗结束后请关闭内存锁定功能</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="invincible_s">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>每次受攻击减少至多2点HP</string>
+         </property>
+         <property name="text">
+          <string>己方无敌</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="onekeyCloseLocking_s">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>330</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>每次受攻击减少至多2点HP</string>
+         </property>
+         <property name="text">
+          <string>一键关闭所有锁定</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_double">
+        <attribute name="title">
+         <string>双打</string>
+        </attribute>
+        <widget class="QPushButton" name="battleWrite_d">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="battleRefresh_d">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>刷新</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupEnemy1">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>敌方(左)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_181">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="enemyCurrHP1"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_182">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="enemyAtk1"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_183">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="enemyDef1"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_184">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="enemySpAtk1"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_185">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="enemySpDef1"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_186">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="enemySpeed1"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupOwn1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>己方(左)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_166">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="ownCurrHP1"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_170">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="ownAtk1"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_171">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="ownDef1"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_187">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="ownSpAtk1"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_188">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="ownSpDef1"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_189">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="ownSpeed1"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupEnemy2">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>敌方(右)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_190">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="enemyCurrHP2"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_191">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="enemyAtk2"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_192">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="enemyDef2"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_193">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="enemySpAtk2"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_194">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="enemySpDef2"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_195">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="enemySpeed2"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupOwn2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>10</y>
+           <width>131</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>己方(右)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_167">
+            <property name="text">
+             <string>当前HP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="ownCurrHP2"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_196">
+            <property name="text">
+             <string>攻击</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="ownAtk2"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_197">
+            <property name="text">
+             <string>防御</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="ownDef2"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_198">
+            <property name="text">
+             <string>特攻</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="ownSpAtk2"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_199">
+            <property name="text">
+             <string>特防</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="ownSpDef2"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_200">
+            <property name="text">
+             <string>速度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="ownSpeed2"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="lockHP_d">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>锁定自己血量</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="battleDetect_d">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>330</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>战斗监测</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="onekeyCloseLocking_d">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>330</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>每次受攻击减少至多2点HP</string>
+         </property>
+         <property name="text">
+          <string>一键关闭所有锁定</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>335</y>
+           <width>181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>战斗结束后请关闭内存锁定功能</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="oneHitKill_d">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>命中对方就必死(对方不是结实特性，没有披带)</string>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>一击必杀(己方)</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="invincible_d">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>290</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>每次受攻击减少至多2点HP</string>
+         </property>
+         <property name="text">
+          <string>己方无敌</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_about">
+      <attribute name="title">
+       <string>关于</string>
+      </attribute>
+      <widget class="QLabel" name="label_version">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>69</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>版本 1.4.6 (2019.7.31)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_copyright">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>98</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>版权所有 © 2018-2019</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>29</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>MyPokeHack</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_icon">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>30</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="img.qrc">:/images/app.ico</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>281</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'微软雅黑'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;使用说明&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;店铺：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/shop.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;请使用VBA 1.8.0版本开始游戏！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline;&quot;&gt;另外声明&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;修改不是目的所在，游戏的乐趣还是要亲自体验。滥用修改游戏将毫无乐趣，望大家自省自觉！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline;&quot;&gt;开发者&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;叹一曲悲凉    QQ:1953649096&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;百度昵称：    Bel丶&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;欢迎相同爱好者共同讨论&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline;&quot;&gt;感谢&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Fuzzier（提供MH源码）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline;&quot;&gt;使用软件&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Qt Creator（可视化解决方案）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Visual Studio 2013（代码调试）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;VC++6.0（代码调试）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Snipaste（素材截取）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;iconxp（图标制作）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Notepad++（阅读代码）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;注:本软件代码完全由个人开发&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="VBA_version">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>65</y>
+         <width>248</width>
+         <height>167</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="img.qrc">:/images/vba.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>35</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>VBA版本</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Tip">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>390</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>捐助</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_54">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>360</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 16pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>用的很顺手,奖励一下吧 !!</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="toTieba">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>460</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>究极绿宝石贴吧</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="enableSettings">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>300</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="noStartDialog">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>307</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>不再显示开始对话框</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="getVBA">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>240</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>获取VBA(1.9MB)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="getMCode">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>240</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>查看机器码</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="howToUse">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>270</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>使用教程</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="howToActive">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>270</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>激活方式</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tab_pokeinfo</tabstop>
+  <tabstop>comboBreed</tabstop>
+  <tabstop>searchBreed</tabstop>
+  <tabstop>comboPers</tabstop>
+  <tabstop>linePersValue</tabstop>
+  <tabstop>comboSex</tabstop>
+  <tabstop>changeId</tabstop>
+  <tabstop>changeHideId</tabstop>
+  <tabstop>comboItem</tabstop>
+  <tabstop>searchItem</tabstop>
+  <tabstop>changeColor</tabstop>
+  <tabstop>lineInti</tabstop>
+  <tabstop>lineExp</tabstop>
+  <tabstop>lineHideID</tabstop>
+  <tabstop>comboLevel</tabstop>
+  <tabstop>toEgg</tabstop>
+  <tabstop>lineRestEggSteps</tabstop>
+  <tabstop>stepsTo0</tabstop>
+  <tabstop>hp</tabstop>
+  <tabstop>atk</tabstop>
+  <tabstop>def</tabstop>
+  <tabstop>sp</tabstop>
+  <tabstop>spatk</tabstop>
+  <tabstop>spdef</tabstop>
+  <tabstop>end_hp</tabstop>
+  <tabstop>end_atk</tabstop>
+  <tabstop>end_def</tabstop>
+  <tabstop>end_sp</tabstop>
+  <tabstop>end_spatk</tabstop>
+  <tabstop>end_spdef</tabstop>
+  <tabstop>ab_hp</tabstop>
+  <tabstop>ab_atk</tabstop>
+  <tabstop>ab_def</tabstop>
+  <tabstop>ab_sp</tabstop>
+  <tabstop>ab_spatk</tabstop>
+  <tabstop>ab_spdef</tabstop>
+  <tabstop>b1</tabstop>
+  <tabstop>b2</tabstop>
+  <tabstop>b3</tabstop>
+  <tabstop>b4</tabstop>
+  <tabstop>b5</tabstop>
+  <tabstop>b6</tabstop>
+  <tabstop>correction</tabstop>
+  <tabstop>MaxBeauty</tabstop>
+  <tabstop>MaxID</tabstop>
+  <tabstop>skill1</tabstop>
+  <tabstop>searchSkill1</tabstop>
+  <tabstop>PP1</tabstop>
+  <tabstop>comboPP1</tabstop>
+  <tabstop>skill2</tabstop>
+  <tabstop>searchSkill2</tabstop>
+  <tabstop>PP2</tabstop>
+  <tabstop>comboPP2</tabstop>
+  <tabstop>skill3</tabstop>
+  <tabstop>searchSkill3</tabstop>
+  <tabstop>PP3</tabstop>
+  <tabstop>comboPP3</tabstop>
+  <tabstop>skill4</tabstop>
+  <tabstop>searchSkill4</tabstop>
+  <tabstop>PP4</tabstop>
+  <tabstop>comboPP4</tabstop>
+  <tabstop>changeSkill</tabstop>
+  <tabstop>LeagueMode</tabstop>
+  <tabstop>MaxPointUp</tabstop>
+  <tabstop>ribbon_b1_0</tabstop>
+  <tabstop>ribbon_b1_1</tabstop>
+  <tabstop>ribbon_b1_2</tabstop>
+  <tabstop>ribbon_b1_3</tabstop>
+  <tabstop>ribbon_b1_4</tabstop>
+  <tabstop>ribbon_b2_0</tabstop>
+  <tabstop>ribbon_b2_1</tabstop>
+  <tabstop>ribbon_b2_2</tabstop>
+  <tabstop>ribbon_b2_3</tabstop>
+  <tabstop>ribbon_b2_4</tabstop>
+  <tabstop>ribbon_b3_0</tabstop>
+  <tabstop>ribbon_b3_1</tabstop>
+  <tabstop>ribbon_b3_2</tabstop>
+  <tabstop>ribbon_b3_3</tabstop>
+  <tabstop>ribbon_b3_4</tabstop>
+  <tabstop>ribbon_b4_0</tabstop>
+  <tabstop>ribbon_b4_1</tabstop>
+  <tabstop>ribbon_b4_2</tabstop>
+  <tabstop>ribbon_b4_3</tabstop>
+  <tabstop>ribbon_b4_4</tabstop>
+  <tabstop>ribbon_b5_0</tabstop>
+  <tabstop>ribbon_b5_1</tabstop>
+  <tabstop>ribbon_b5_2</tabstop>
+  <tabstop>ribbon_b5_3</tabstop>
+  <tabstop>ribbon_b5_4</tabstop>
+  <tabstop>ribbon_unk_1</tabstop>
+  <tabstop>ribbon_unk_2</tabstop>
+  <tabstop>ribbon_unk_3</tabstop>
+  <tabstop>ribbon_unk_4</tabstop>
+  <tabstop>ribbon_unk_5</tabstop>
+  <tabstop>ribbon_unk_6</tabstop>
+  <tabstop>ribbon_unk_7</tabstop>
+  <tabstop>ribbon_other_1</tabstop>
+  <tabstop>ribbon_other_2</tabstop>
+  <tabstop>ribbon_other_3</tabstop>
+  <tabstop>ribbon_other_4</tabstop>
+  <tabstop>ribbon_other_5</tabstop>
+  <tabstop>ribbon20</tabstop>
+  <tabstop>ribbon25</tabstop>
+  <tabstop>ribbon32</tabstop>
+  <tabstop>ribbon0</tabstop>
+  <tabstop>name</tabstop>
+  <tabstop>nameInput</tabstop>
+  <tabstop>searchPokeName</tabstop>
+  <tabstop>writePokeName</tabstop>
+  <tabstop>lineOTName</tabstop>
+  <tabstop>lineOTNameInput</tabstop>
+  <tabstop>searchOTName</tabstop>
+  <tabstop>writeOTName</tabstop>
+  <tabstop>comboBall</tabstop>
+  <tabstop>comboInitialLevel</tabstop>
+  <tabstop>comboPlace</tabstop>
+  <tabstop>placeProbably</tabstop>
+  <tabstop>comboVirus</tabstop>
+  <tabstop>mark4</tabstop>
+  <tabstop>mark3</tabstop>
+  <tabstop>mark2</tabstop>
+  <tabstop>mark1</tabstop>
+  <tabstop>copy</tabstop>
+  <tabstop>paste</tabstop>
+  <tabstop>deletePokemon</tabstop>
+  <tabstop>switch_snipaste</tabstop>
+  <tabstop>status_sleep</tabstop>
+  <tabstop>lineSleepBout</tabstop>
+  <tabstop>status_toxic</tabstop>
+  <tabstop>status_poison</tabstop>
+  <tabstop>status_frost</tabstop>
+  <tabstop>status_burn</tabstop>
+  <tabstop>status_palsy</tabstop>
+  <tabstop>linePlayerName</tabstop>
+  <tabstop>lineNameInput</tabstop>
+  <tabstop>searchName</tabstop>
+  <tabstop>linePlayerID</tabstop>
+  <tabstop>lineMoney</tabstop>
+  <tabstop>lineCoin</tabstop>
+  <tabstop>lineDust</tabstop>
+  <tabstop>lineRestSteps</tabstop>
+  <tabstop>lineBattlePoint</tabstop>
+  <tabstop>lineBattlePointOnCard</tabstop>
+  <tabstop>comboPlayerItem</tabstop>
+  <tabstop>searchPlayerItem</tabstop>
+  <tabstop>linePlayereItemQuantity</tabstop>
+  <tabstop>writeItem</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>noStartDialog</tabstop>
+  <tabstop>toTieba</tabstop>
+  <tabstop>Tip</tabstop>
+  <tabstop>statsCalculator</tabstop>
+ </tabstops>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
