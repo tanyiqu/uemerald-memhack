@@ -24,6 +24,10 @@ bilibili：[Tanyiqu-bili](https://space.bilibili.com/42337616)
 ## 如何更新
 请观看[如何更新](https://www.bilibili.com/video/BV11i4y1G7aC)
 
+## 永久mega
+修改器不能改永久mega，永久mega是游戏版本。
+请在[此处](https://tanyiqu.lanzous.com/b0cq6u7gd)找到永久mega的游戏版本下载。
+
 ## 一些不适用的地方
 ### 究极绿宝石4.0版本后一键技能机器功能不能正常使用
 解决：不要一键技能机，需要哪一个手动添加。如果已经出现bug请删掉bug的道具，或把道具补充回来。
