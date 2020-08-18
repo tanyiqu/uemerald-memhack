@@ -3679,9 +3679,9 @@ color:rgb(187, 102, 51);
       <widget class="QLabel" name="label_75">
        <property name="geometry">
         <rect>
-         <x>180</x>
+         <x>330</x>
          <y>100</y>
-         <width>81</width>
+         <width>101</width>
          <height>21</height>
         </rect>
        </property>
@@ -3692,7 +3692,7 @@ color:rgb(187, 102, 51);
       <widget class="QLineEdit" name="lineMoney">
        <property name="geometry">
         <rect>
-         <x>180</x>
+         <x>330</x>
          <y>130</y>
          <width>101</width>
          <height>22</height>
@@ -3725,7 +3725,7 @@ color:rgb(187, 102, 51);
       <widget class="QLineEdit" name="lineCoin">
        <property name="geometry">
         <rect>
-         <x>340</x>
+         <x>180</x>
          <y>130</y>
          <width>101</width>
          <height>22</height>
@@ -3735,7 +3735,7 @@ color:rgb(187, 102, 51);
       <widget class="QLabel" name="label_77">
        <property name="geometry">
         <rect>
-         <x>340</x>
+         <x>180</x>
          <y>100</y>
          <width>81</width>
          <height>21</height>
@@ -3921,7 +3921,7 @@ color:rgb(187, 102, 51);
        <property name="geometry">
         <rect>
          <x>340</x>
-         <y>160</y>
+         <y>260</y>
          <width>181</width>
          <height>151</height>
         </rect>
@@ -3942,6 +3942,38 @@ color:rgb(187, 102, 51);
          <string>出现幻岛</string>
         </property>
        </widget>
+       <widget class="QLabel" name="label_89">
+        <property name="geometry">
+         <rect>
+          <x>22</x>
+          <y>70</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>适用究极绿4.0及之前版本&lt;br&gt;之后的版本请进行串档操作</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_90">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>153</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>如果显示不符合就修改大师球再卖掉获取金币</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tab_item">
@@ -4471,7 +4503,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="geometry">
         <rect>
-         <x>270</x>
+         <x>260</x>
          <y>160</y>
          <width>81</width>
          <height>31</height>
@@ -4493,7 +4525,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="geometry">
         <rect>
-         <x>370</x>
+         <x>350</x>
          <y>160</y>
          <width>71</width>
          <height>31</height>
@@ -4507,6 +4539,22 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="default">
         <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_88">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>165</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>！这几个按钮慎用！</string>
        </property>
       </widget>
      </widget>
@@ -4524,7 +4572,7 @@ border-image:url(:/images/search_pressed.png)
         </rect>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tab_single">
         <attribute name="title">
@@ -5291,7 +5339,7 @@ border-image:url(:/images/search_pressed.png)
         <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
        </property>
        <property name="text">
-        <string>版本 2.0.0 (2020.6.26)</string>
+        <string>版本 2.0.1 (2020.8.18)</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
