@@ -5339,7 +5339,7 @@ border-image:url(:/images/search_pressed.png)
         <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
        </property>
        <property name="text">
-        <string>版本 2.0.1 (2020.8.18)</string>
+        <string>版本 2.0.2 (2020.8.19)</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>

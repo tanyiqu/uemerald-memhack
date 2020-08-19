@@ -3481,6 +3481,6 @@ void Widget::on_repository_clicked()
 
 void Widget::on_homePage_clicked()
 {
-     const QUrl regUrl(QLatin1String("https://tanyiqu.github.io/UltimateEmeraldHack/pages/index.html"));
+     const QUrl regUrl(QLatin1String("http://tanyiqu.gitee.io/ultimateemeraldhack/pages/index.html"));
      QDesktopServices::openUrl(regUrl);
 }
