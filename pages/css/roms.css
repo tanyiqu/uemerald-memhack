@@ -4,37 +4,44 @@ body {
 }
 header {
   width: 100%;
-  height: 55px;
+  height: 0.6875rem;
   background: #fff;
 }
 main {
   width: 70%;
-  height: 500px;
-  margin: 20px auto;
-  padding: 25px;
+  margin: 0.25rem auto;
+  padding: 0.3125rem;
   background: pink;
-  border-radius: 16px;
+  border-radius: 0.2rem;
 }
 main ul {
   list-style: none;
 }
 main ul li {
+  position: relative;
   width: 94%;
-  height: 200px;
-  margin: 20px auto;
-  padding: 15px;
+  height: 1.75rem;
+  margin: 0.25rem auto;
+  padding: 0.1875rem;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0.125rem;
   display: flex;
 }
 main ul li img {
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.125rem;
+  cursor: pointer;
 }
 main ul li .right {
-  margin-left: 18px;
+  margin-left: 0.225rem;
 }
 main ul li .right .version-name {
   margin-top: 2px;
-  font-size: 30px;
+  font-size: 0.325rem;
+}
+main ul li .right .version-dl {
+  position: absolute;
+  bottom: 0.25rem;
+  font-size: 0.21rem;
+  cursor: pointer;
 }

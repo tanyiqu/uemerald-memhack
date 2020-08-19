@@ -4,56 +4,53 @@ body {
 }
 
 header {
-    width        : 100%;
-    height       : 55px;
-    background   : #fff;
-    // text-align: center;
-
-    // .swiper {
-    //     width: 100%;
-
-    //     img {
-    //         width     : 100%;
-    //         object-fit: cover;
-    //     }
-    // }
-
+    width     : 100%;
+    height    : 0.6875rem;
+    background: #fff;
 }
 
 main {
     width           : 70%;
-    height          : 500px;
-    margin          : 20px auto;
-    padding         : 25px;
+    margin          : 0.25rem auto;
+    padding         : 0.3125rem;
     // background   : rgba(255, 255, 255, .9);
     background      : pink;
-    border-radius   : 16px;
+    border-radius   : 0.2rem;
 
     ul {
         list-style: none;
 
         li {
+            position        : relative;
             width           : 94%;
-            height          : 200px;
-            margin          : 20px auto;
-            padding         : 15px;
+            height          : 1.75rem;
+            margin          : 0.25rem auto;
+            padding         : 0.1875rem;
             // background   : pink;
             background      : #fff;
-            border-radius   : 10px;
+            border-radius   : 0.125rem;
             display         : flex;
 
             img {
                 height       : 100%;
-                border-radius: 10px;
+                border-radius: 0.125rem;
+                cursor       : pointer;
             }
 
             .right {
-                margin-left: 18px;
+                margin-left   : 0.225rem;
                 // background : pink;
 
                 .version-name {
                     margin-top: 2px;
-                    font-size: 30px;
+                    font-size : 0.325rem;
+                }
+
+                .version-dl {
+                    position : absolute;
+                    bottom   : 0.25rem;
+                    font-size: 0.21rem;
+                    cursor   : pointer;
                 }
             }
 
