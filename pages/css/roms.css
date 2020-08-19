@@ -1,17 +1,29 @@
 body {
-  background: url(../imgs/bg1.png) no-repeat center;
-  background-size: cover;
+  position: relative;
 }
-header {
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/Candy-Shop-Black.ttf);
+}
+.bg {
   width: 100%;
-  height: 0.6875rem;
-  background: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.title {
+  margin-top: 0.2rem;
+  text-align: center;
+  font-family: "myFont", sans-serif;
+  font-size: 40px;
 }
 main {
   width: 70%;
-  margin: 0.25rem auto;
+  margin: 0.2375rem auto;
   padding: 0.3125rem;
-  background: pink;
+  background: rgba(218, 181, 250, 0.75);
   border-radius: 0.2rem;
 }
 main ul {
@@ -43,5 +55,33 @@ main ul li .right .version-dl {
   position: absolute;
   bottom: 0.25rem;
   font-size: 0.21rem;
+  cursor: pointer;
+}
+.donate {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  padding: 2px;
+}
+.donate p {
+  font-size: 14px;
+}
+.donate-qr {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 360px;
+  height: 235px;
+  background: pink;
+  display: none;
+}
+.contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  color: #7f7ff7 f;
   cursor: pointer;
 }
