@@ -21,10 +21,10 @@ body {
 }
 main {
   width: 70%;
-  margin: 0.2375rem auto;
-  padding: 0.3125rem;
+  margin: 20px auto;
+  padding: 15px;
   background: rgba(218, 181, 250, 0.75);
-  border-radius: 0.2rem;
+  border-radius: 16px;
 }
 main ul {
   list-style: none;
@@ -32,29 +32,29 @@ main ul {
 main ul li {
   position: relative;
   width: 94%;
-  height: 1.75rem;
-  margin: 0.25rem auto;
-  padding: 0.1875rem;
+  height: 8rem;
+  margin: 20px auto;
+  padding: 15px;
   background: #fff;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   display: flex;
 }
 main ul li img {
   height: 100%;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 main ul li .right {
-  margin-left: 0.225rem;
+  margin-left: 18px;
 }
 main ul li .right .version-name {
   margin-top: 2px;
-  font-size: 0.325rem;
+  font-size: 26px;
 }
 main ul li .right .version-dl {
   position: absolute;
-  bottom: 0.25rem;
-  font-size: 0.21rem;
+  bottom: 20px;
+  font-size: 16.8px;
   cursor: pointer;
 }
 .donate {
