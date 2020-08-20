@@ -92,8 +92,9 @@ function loadVersions() {
         <div class="right">
             <h3 class="version-name">GBA模拟器</h3>
             <span class="version-dl" durl="https://www.bilibili.com/video/BV1Sh411o7UK">Windows模拟器</span>
-            <span class="version-dl" style="margin-left:150px" durl="https://www.bilibili.com/video/BV1Bp4y1i794">Android模拟器</span>
-            <span class="version-dl" style="margin-left:300px" durl="https://www.bilibili.com/video/BV1Ba4y1E7y2">IOS模拟器</span>
+            <span class="version-dl" style="margin-left:1.875rem" durl="https://www.bilibili.com/video/BV1Bp4y1i794">Android模拟器</span>
+            <span class="version-dl" style="margin-left:3.625rem" durl="https://www.bilibili.com/video/BV1Ba4y1E7y2">IOS模拟器</span>
+            <span class="version-dl" style="margin-left:4.875rem" durl="https://tanyiqu.lanzoui.com/b0cqgy6sd">下载所有模拟器</span>
         </div>
     </li>
     `;
