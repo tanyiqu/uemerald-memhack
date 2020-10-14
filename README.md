@@ -40,4 +40,5 @@ bilibili：[Tanyiqu-bili](https://space.bilibili.com/42337616)
 
 ## 打赏
 ### 觉得好用的话可以给本人充下电 :)
-![avatar](https://tanyiqu.github.io/UltimateEmeraldHack/MyMH/images/tip.png)
+<!-- ![avatar](https://tanyiqu.github.io/UltimateEmeraldHack/MyMH/images/tip.png) -->
+![avatar](https://tanyiqu.oss-cn-hangzhou.aliyuncs.com/imgs/tip.jpg)
