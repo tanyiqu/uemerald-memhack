@@ -16,7 +16,7 @@ bilibili：[Tanyiqu-bili](https://space.bilibili.com/42337616)
 
 ## 如何下载
 
-点击[此处](https://github.com/Tanyiqu/UltimateEmeraldHack/releases)进行下载。（网页访问可能有点慢，也可以在官方群里面下载）
+点击[此处](https://github.com/tanyiqu/uemerald-memory-hack/releases)进行下载。（网页访问可能有点慢，也可以在官方群里面下载）
 
 ## 如何使用
 请观看[此教程](https://www.bilibili.com/video/BV1cb411j7Ag)
