@@ -84,7 +84,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>10</y>
+          <y>20</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -106,7 +106,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>50</y>
+          <y>60</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -125,7 +125,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>130</y>
+          <y>140</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -144,7 +144,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>90</y>
+          <y>100</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -163,7 +163,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>170</y>
+          <y>180</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -182,7 +182,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>210</y>
+          <y>220</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -386,7 +386,7 @@
           </rect>
          </property>
          <property name="text">
-          <string>闪</string>
+          <string>闪光</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -605,7 +605,7 @@ border-image:url(:/images/search_pressed.png)
           </rect>
          </property>
          <property name="text">
-          <string>改好性格性别后再渡闪</string>
+          <string>改好性格、性别之后，再点击闪光</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_68">
@@ -3579,7 +3579,7 @@ color:rgb(187, 102, 51);
        <property name="geometry">
         <rect>
          <x>80</x>
-         <y>310</y>
+         <y>320</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3595,7 +3595,7 @@ color:rgb(187, 102, 51);
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>310</y>
+         <y>320</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3619,8 +3619,8 @@ color:rgb(187, 102, 51);
       <widget class="QLabel" name="screen">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>10</y>
+         <x>20</x>
+         <y>20</y>
          <width>91</width>
          <height>41</height>
         </rect>
@@ -3633,13 +3633,35 @@ color:rgb(187, 102, 51);
        <property name="geometry">
         <rect>
          <x>15</x>
-         <y>360</y>
+         <y>370</y>
          <width>131</width>
          <height>41</height>
         </rect>
        </property>
        <property name="text">
-        <string>写入属性前一定刷新检查一下，有些修改后不可逆</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;先点击刷新，然后再写入！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblHelp">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>420</y>
+         <width>551</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;如果 刷新后显示乱码、闪退、写入后游戏内数据没有发生变化的，可以在关于那里找到 “常见问题”&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -4405,16 +4427,16 @@ border-image:url(:/images/search_pressed.png)
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 0, 0);</string>
+        <string notr="true"/>
        </property>
        <property name="text">
-        <string>注意选择游戏版本</string>
+        <string>注意选择游戏版请本</string>
        </property>
       </widget>
       <widget class="QPushButton" name="deleteItem">
        <property name="geometry">
         <rect>
-         <x>470</x>
+         <x>490</x>
          <y>120</y>
          <width>81</width>
          <height>31</height>
@@ -4448,7 +4470,7 @@ border-image:url(:/images/search_pressed.png)
         <rect>
          <x>360</x>
          <y>123</y>
-         <width>111</width>
+         <width>121</width>
          <height>21</height>
         </rect>
        </property>
@@ -4461,12 +4483,12 @@ border-image:url(:/images/search_pressed.png)
         <rect>
          <x>20</x>
          <y>160</y>
-         <width>141</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="text">
-        <string>现有普通道具变为99个</string>
+        <string>普通道具x99</string>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -4481,7 +4503,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>105</x>
          <y>160</y>
          <width>81</width>
          <height>31</height>
@@ -4503,7 +4525,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="geometry">
         <rect>
-         <x>260</x>
+         <x>190</x>
          <y>160</y>
          <width>81</width>
          <height>31</height>
@@ -4525,7 +4547,7 @@ border-image:url(:/images/search_pressed.png)
        </property>
        <property name="geometry">
         <rect>
-         <x>350</x>
+         <x>275</x>
          <y>160</y>
          <width>71</width>
          <height>31</height>
@@ -4544,9 +4566,9 @@ border-image:url(:/images/search_pressed.png)
       <widget class="QLabel" name="label_88">
        <property name="geometry">
         <rect>
-         <x>430</x>
+         <x>355</x>
          <y>165</y>
-         <width>121</width>
+         <width>201</width>
          <height>21</height>
         </rect>
        </property>
@@ -4554,7 +4576,7 @@ border-image:url(:/images/search_pressed.png)
         <string notr="true">color: rgb(255, 0, 0);</string>
        </property>
        <property name="text">
-        <string>！这几个按钮慎用！</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;← 这4个按钮只适用究极绿宝石3版本&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
@@ -5339,7 +5361,7 @@ border-image:url(:/images/search_pressed.png)
         <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
        </property>
        <property name="text">
-        <string>版本 2.0.2 (2020.8.19)</string>
+        <string>版本 2.0.3 (2021.2.5)</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -5433,7 +5455,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;作者&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Tanyiqu：1953649096@qq.com&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Bilibili：Tanyiqu-bili&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;GitHub：Tanyiqu&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;GitHub：tanyiqu&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;究极绿宝石游戏交流群聊（QQ）：232377497&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;欢迎相同爱好者共同讨论&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;感谢&lt;/span&gt;&lt;/p&gt;
@@ -5487,7 +5509,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>470</x>
-         <y>390</y>
+         <y>396</y>
          <width>81</width>
          <height>31</height>
         </rect>
@@ -5509,7 +5531,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>320</x>
-         <y>360</y>
+         <y>363</y>
          <width>241</width>
          <height>31</height>
         </rect>
@@ -5537,8 +5559,8 @@ p, li { white-space: pre-wrap; }
       <widget class="QPushButton" name="enableSettings">
        <property name="geometry">
         <rect>
-         <x>490</x>
-         <y>300</y>
+         <x>470</x>
+         <y>328</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -5562,8 +5584,8 @@ p, li { white-space: pre-wrap; }
       <widget class="QCheckBox" name="noStartDialog">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>307</y>
+         <x>320</x>
+         <y>335</y>
          <width>131</width>
          <height>16</height>
         </rect>
@@ -5622,6 +5644,19 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="text">
         <string>项目地址</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnProblem">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>300</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>常见问题</string>
        </property>
       </widget>
      </widget>

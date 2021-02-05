@@ -200,6 +200,8 @@ private slots:
 
     void on_homePage_clicked();
 
+    void on_btnProblem_clicked();
+
 protected:
     void keyPressEvent(QKeyEvent *);
 

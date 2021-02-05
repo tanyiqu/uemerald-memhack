@@ -3475,12 +3475,19 @@ void Widget::on_howToUse_clicked()
 
 void Widget::on_repository_clicked()
 {
-    const QUrl regUrl(QLatin1String("https://github.com/Tanyiqu/UltimateEmeraldHack"));
+    const QUrl regUrl(QLatin1String("https://github.com/tanyiqu/uemerald-memhack"));
     QDesktopServices::openUrl(regUrl);
 }
 
 void Widget::on_homePage_clicked()
 {
-     const QUrl regUrl(QLatin1String("http://tanyiqu.gitee.io/ultimateemeraldhack/pages/index.html"));
+     const QUrl regUrl(QLatin1String("https://tanyiqu.github.io/uemerald-memhack/"));
      QDesktopServices::openUrl(regUrl);
+}
+
+// 常见问题
+void Widget::on_btnProblem_clicked()
+{
+    const QUrl regUrl(QLatin1String("https://www.kancloud.cn/tanyiqu/uemerald-memhack/2145986"));
+    QDesktopServices::openUrl(regUrl);
 }
