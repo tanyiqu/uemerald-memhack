@@ -591,6 +591,40 @@ void Widget::loadAbility()
     ability[231] = tr("幻影防守");
     ability[232] = tr("棱镜装甲");
     ability[233] = tr("脑核之力");
+    ability[234] = tr("不挠之剑");
+//    ability[235] = tr("不屈之盾");
+//    ability[236] = tr("自由者");
+//    ability[237] = tr("捡球");
+//    ability[238] = tr("棉絮");
+//    ability[239] = tr("螺旋尾鳍");
+//    ability[240] = tr("镜甲");
+//    ability[241] = tr("一口导弹");
+//    ability[242] = tr("坚毅");
+//    ability[243] = tr("蒸汽机");
+//    ability[244] = tr("庞克摇滚");
+//    ability[245] = tr("吐沙");
+//    ability[246] = tr("冰鳞粉");
+//    ability[247] = tr("熟成");
+//    ability[248] = tr("结冻头");
+//    ability[249] = tr("能量点");
+//    ability[250] = tr("拟态");
+//    ability[251] = tr("除障");
+//    ability[252] = tr("钢之意志");
+//    ability[253] = tr("灭亡之躯");
+//    ability[254] = tr("游魂");
+//    ability[255] = tr("一猩一意");
+//    ability[256] = tr("化学变化气体");
+//    ability[257] = tr("粉彩护幕");
+//    ability[258] = tr("饱了又饿");
+//    ability[259] = tr("速击");
+//    ability[260] = tr("无形拳");
+//    ability[261] = tr("怪药");
+//    ability[262] = tr("电晶体");
+//    ability[263] = tr("龙颚");
+//    ability[264] = tr("苍白嘶鸣");
+//    ability[265] = tr("漆黑嘶鸣");
+//    ability[266] = tr("人马一体");
+//    ability[267] = tr("人马一体");
 }
 
 /**
@@ -1006,9 +1040,9 @@ void Widget::showAbility()
     u8 a2 = VBA.ReadValue_1(0x00F186E0+28*currentPoke.breed+23,VBA.ROMAddress);
     u8 a3 = VBA.ReadValue_1(0x00F186E0+28*currentPoke.breed+26,VBA.ROMAddress);
     ui->comboAbility->clear();
-    ui->comboAbility->addItem(ability[a1]);
-    ui->comboAbility->addItem(ability[a2]);
-    ui->comboAbility->addItem(tr("梦特: ") + ability[a3]);
+    ui->comboAbility->addItem(tr("特性1 ") + ability[a1]);
+    ui->comboAbility->addItem(tr("特性2 ") + ability[a2]);
+    ui->comboAbility->addItem(tr("梦特 ") + ability[a3]);
     currentPoke.hideID = VBA.ReadValue_2(poke[currentPoke.index].HideID);
     u16 p = currentPoke.hideID;
     QString str = QString::number(p,2);
